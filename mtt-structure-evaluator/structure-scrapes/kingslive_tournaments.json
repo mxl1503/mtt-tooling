@@ -1,0 +1,1816 @@
+{
+  "source": "kingslive",
+  "scraped_at_utc": "2026-03-04T17:04:30.758659+00:00",
+  "listing_urls": [
+    "https://kingslive.com.au/live/",
+    "https://kingslive.com.au/"
+  ],
+  "summary": {
+    "tournaments_found": 8,
+    "with_s_points": 8,
+    "without_s_points": 0
+  },
+  "tournaments": [
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 3: MINI MAIN",
+      "url": "https://kingslive.com.au/76-2/?id=492",
+      "buyin": null,
+      "starting_stack": 40000,
+      "level_length_minutes": 30,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 100,
+          "bba": 0,
+          "orbit_cost": 200
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 3,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 4,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 5,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 6,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 7,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 8,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 9,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 10,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 11,
+          "sb": 1000,
+          "bb": 2500,
+          "bba": 2500,
+          "orbit_cost": 6000
+        },
+        {
+          "level": 12,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 13,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 14,
+          "sb": 2000,
+          "bb": 5000,
+          "bba": 5000,
+          "orbit_cost": 12000
+        },
+        {
+          "level": 15,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 16,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 17,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 18,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 19,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 20,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 21,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 22,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 23,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 24,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 25,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 26,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 27,
+          "sb": 50000,
+          "bb": 125000,
+          "bba": 125000,
+          "orbit_cost": 300000
+        },
+        {
+          "level": 28,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 29,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        },
+        {
+          "level": 30,
+          "sb": 100000,
+          "bb": 250000,
+          "bba": 250000,
+          "orbit_cost": 600000
+        },
+        {
+          "level": 31,
+          "sb": 150000,
+          "bb": 300000,
+          "bba": 300000,
+          "orbit_cost": 750000
+        },
+        {
+          "level": 32,
+          "sb": 200000,
+          "bb": 400000,
+          "bba": 400000,
+          "orbit_cost": 1000000
+        },
+        {
+          "level": 33,
+          "sb": 250000,
+          "bb": 500000,
+          "bba": 500000,
+          "orbit_cost": 1250000
+        },
+        {
+          "level": 34,
+          "sb": 300000,
+          "bb": 600000,
+          "bba": 600000,
+          "orbit_cost": 1500000
+        },
+        {
+          "level": 35,
+          "sb": 400000,
+          "bb": 800000,
+          "bba": 800000,
+          "orbit_cost": 2000000
+        },
+        {
+          "level": 36,
+          "sb": 500000,
+          "bb": 1000000,
+          "bba": 1000000,
+          "orbit_cost": 2500000
+        }
+      ],
+      "s_points": 77.03,
+      "affordable_levels_count": 19,
+      "starting_stack_minutes": 570,
+      "denominator": 7.4,
+      "reference_orbit_costs": {
+        "6": 2000,
+        "10": 5000,
+        "14": 12000,
+        "18": 30000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-3-mini-main.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 5: Triple Barrel",
+      "url": "https://kingslive.com.au/76-2/?id=488",
+      "buyin": "$150",
+      "starting_stack": 40000,
+      "level_length_minutes": 20,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 3,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 4,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 5,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 6,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 7,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 8,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 9,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 10,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 11,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 12,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 13,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 14,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 15,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 16,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 17,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 18,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 19,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 20,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 21,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 22,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 23,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 24,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 25,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        },
+        {
+          "level": 26,
+          "sb": 150000,
+          "bb": 300000,
+          "bba": 300000,
+          "orbit_cost": 750000
+        },
+        {
+          "level": 27,
+          "sb": 200000,
+          "bb": 400000,
+          "bba": 400000,
+          "orbit_cost": 1000000
+        }
+      ],
+      "s_points": 34.29,
+      "affordable_levels_count": 16,
+      "starting_stack_minutes": 320,
+      "denominator": 9.333333333333334,
+      "reference_orbit_costs": {
+        "6": 2500,
+        "10": 7500,
+        "14": 25000,
+        "18": 75000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-5-triple-barrel.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 6: Pokershop DEEPSTACK",
+      "url": "https://kingslive.com.au/76-2/?id=490",
+      "buyin": "$300",
+      "starting_stack": 100000,
+      "level_length_minutes": 20,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 2,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 3,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 4,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 5,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 6,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 7,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 8,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 9,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 10,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 11,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 12,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 13,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 14,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 15,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 16,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 17,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 18,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 19,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 20,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 21,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 22,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 23,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 24,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        },
+        {
+          "level": 25,
+          "sb": 150000,
+          "bb": 300000,
+          "bba": 300000,
+          "orbit_cost": 750000
+        },
+        {
+          "level": 26,
+          "sb": 200000,
+          "bb": 400000,
+          "bba": 400000,
+          "orbit_cost": 1000000
+        },
+        {
+          "level": 27,
+          "sb": 300000,
+          "bb": 600000,
+          "bba": 600000,
+          "orbit_cost": 1500000
+        }
+      ],
+      "s_points": 37.24,
+      "affordable_levels_count": 18,
+      "starting_stack_minutes": 360,
+      "denominator": 9.666666666666668,
+      "reference_orbit_costs": {
+        "6": 3000,
+        "10": 10000,
+        "14": 30000,
+        "18": 100000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-6-pokershop-deepstack.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 7: One Shot SC",
+      "url": "https://kingslive.com.au/76-2/?id=468",
+      "buyin": "$300",
+      "starting_stack": 40000,
+      "level_length_minutes": 20,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 3,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 4,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 5,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 6,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 7,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 8,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 9,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 10,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 11,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 12,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 13,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 14,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 15,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 16,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 17,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 18,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 19,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 20,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 21,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 22,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 23,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        }
+      ],
+      "s_points": 34.29,
+      "affordable_levels_count": 16,
+      "starting_stack_minutes": 320,
+      "denominator": 9.333333333333334,
+      "reference_orbit_costs": {
+        "6": 2500,
+        "10": 7500,
+        "14": 25000,
+        "18": 75000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-7-one-shot-sc.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 8: Survivor Bounty",
+      "url": "https://kingslive.com.au/76-2/?id=469",
+      "buyin": "$300",
+      "starting_stack": 40000,
+      "level_length_minutes": 20,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 3,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 4,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 5,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 6,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 7,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 8,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 9,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 10,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 11,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 12,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 13,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 14,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 15,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 16,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 17,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 18,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 19,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 20,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 21,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 22,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 23,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 24,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 25,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        }
+      ],
+      "s_points": 34.29,
+      "affordable_levels_count": 16,
+      "starting_stack_minutes": 320,
+      "denominator": 9.333333333333334,
+      "reference_orbit_costs": {
+        "6": 2500,
+        "10": 7500,
+        "14": 25000,
+        "18": 75000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-8-survivor-bounty.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 9: The 300",
+      "url": "https://kingslive.com.au/76-2/?id=495",
+      "buyin": "$300",
+      "starting_stack": 30000,
+      "level_length_minutes": 20,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 100,
+          "bba": 0,
+          "orbit_cost": 200
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 3,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 4,
+          "sb": 200,
+          "bb": 400,
+          "bba": 0,
+          "orbit_cost": 600
+        },
+        {
+          "level": 5,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 6,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 7,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 8,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 9,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 10,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 11,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 12,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 13,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 14,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 15,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 16,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 17,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 18,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 19,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 20,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 21,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 22,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 23,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 24,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 25,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 26,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 27,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        },
+        {
+          "level": 28,
+          "sb": 150000,
+          "bb": 300000,
+          "bba": 300000,
+          "orbit_cost": 750000
+        }
+      ],
+      "s_points": 37.43,
+      "affordable_levels_count": 17,
+      "starting_stack_minutes": 340,
+      "denominator": 9.083333333333332,
+      "reference_orbit_costs": {
+        "6": 1500,
+        "10": 4000,
+        "14": 15000,
+        "18": 40000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-9-the-300.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 10: MAIN EVENT",
+      "url": "https://kingslive.com.au/76-2/?id=499",
+      "buyin": "$400",
+      "starting_stack": 50000,
+      "level_length_minutes": 30,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 3,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 4,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 5,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 6,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 7,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 8,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 9,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 10,
+          "sb": 1000,
+          "bb": 2500,
+          "bba": 2500,
+          "orbit_cost": 6000
+        },
+        {
+          "level": 11,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 12,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 13,
+          "sb": 2000,
+          "bb": 5000,
+          "bba": 5000,
+          "orbit_cost": 12000
+        },
+        {
+          "level": 14,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 15,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 16,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 17,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 18,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 19,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 20,
+          "sb": 10000,
+          "bb": 25000,
+          "bba": 25000,
+          "orbit_cost": 60000
+        },
+        {
+          "level": 21,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 22,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 23,
+          "sb": 25000,
+          "bb": 50000,
+          "bba": 50000,
+          "orbit_cost": 125000
+        },
+        {
+          "level": 24,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 25,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 26,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 27,
+          "sb": 50000,
+          "bb": 125000,
+          "bba": 125000,
+          "orbit_cost": 300000
+        },
+        {
+          "level": 28,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 29,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        },
+        {
+          "level": 30,
+          "sb": 100000,
+          "bb": 250000,
+          "bba": 250000,
+          "orbit_cost": 600000
+        },
+        {
+          "level": 31,
+          "sb": 150000,
+          "bb": 300000,
+          "bba": 300000,
+          "orbit_cost": 750000
+        },
+        {
+          "level": 32,
+          "sb": 200000,
+          "bb": 400000,
+          "bba": 400000,
+          "orbit_cost": 1000000
+        },
+        {
+          "level": 33,
+          "sb": 250000,
+          "bb": 500000,
+          "bba": 500000,
+          "orbit_cost": 1250000
+        },
+        {
+          "level": 34,
+          "sb": 300000,
+          "bb": 600000,
+          "bba": 600000,
+          "orbit_cost": 1500000
+        },
+        {
+          "level": 35,
+          "sb": 400000,
+          "bb": 800000,
+          "bba": 800000,
+          "orbit_cost": 2000000
+        },
+        {
+          "level": 36,
+          "sb": 500000,
+          "bb": 1000000,
+          "bba": 1000000,
+          "orbit_cost": 2500000
+        },
+        {
+          "level": 37,
+          "sb": 1000000,
+          "bb": 2000000,
+          "bba": 2000000,
+          "orbit_cost": 5000000
+        }
+      ],
+      "s_points": 75.33,
+      "affordable_levels_count": 19,
+      "starting_stack_minutes": 570,
+      "denominator": 7.566666666666666,
+      "reference_orbit_costs": {
+        "6": 2500,
+        "10": 6000,
+        "14": 15000,
+        "18": 40000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-10-main-event.json"
+    },
+    {
+      "source": "kingslive",
+      "name": "KC @ Churchills Event 11: Series Saver",
+      "url": "https://kingslive.com.au/76-2/?id=497",
+      "buyin": "$450",
+      "starting_stack": 50000,
+      "level_length_minutes": 30,
+      "levels": [
+        {
+          "level": 1,
+          "sb": 100,
+          "bb": 200,
+          "bba": 0,
+          "orbit_cost": 300
+        },
+        {
+          "level": 2,
+          "sb": 100,
+          "bb": 300,
+          "bba": 0,
+          "orbit_cost": 400
+        },
+        {
+          "level": 3,
+          "sb": 200,
+          "bb": 400,
+          "bba": 400,
+          "orbit_cost": 1000
+        },
+        {
+          "level": 4,
+          "sb": 300,
+          "bb": 600,
+          "bba": 600,
+          "orbit_cost": 1500
+        },
+        {
+          "level": 5,
+          "sb": 400,
+          "bb": 800,
+          "bba": 800,
+          "orbit_cost": 2000
+        },
+        {
+          "level": 6,
+          "sb": 500,
+          "bb": 1000,
+          "bba": 1000,
+          "orbit_cost": 2500
+        },
+        {
+          "level": 7,
+          "sb": 600,
+          "bb": 1200,
+          "bba": 1200,
+          "orbit_cost": 3000
+        },
+        {
+          "level": 8,
+          "sb": 800,
+          "bb": 1600,
+          "bba": 1600,
+          "orbit_cost": 4000
+        },
+        {
+          "level": 9,
+          "sb": 1000,
+          "bb": 2000,
+          "bba": 2000,
+          "orbit_cost": 5000
+        },
+        {
+          "level": 10,
+          "sb": 1500,
+          "bb": 3000,
+          "bba": 3000,
+          "orbit_cost": 7500
+        },
+        {
+          "level": 11,
+          "sb": 2000,
+          "bb": 4000,
+          "bba": 4000,
+          "orbit_cost": 10000
+        },
+        {
+          "level": 12,
+          "sb": 3000,
+          "bb": 6000,
+          "bba": 6000,
+          "orbit_cost": 15000
+        },
+        {
+          "level": 13,
+          "sb": 4000,
+          "bb": 8000,
+          "bba": 8000,
+          "orbit_cost": 20000
+        },
+        {
+          "level": 14,
+          "sb": 5000,
+          "bb": 10000,
+          "bba": 10000,
+          "orbit_cost": 25000
+        },
+        {
+          "level": 15,
+          "sb": 6000,
+          "bb": 12000,
+          "bba": 12000,
+          "orbit_cost": 30000
+        },
+        {
+          "level": 16,
+          "sb": 8000,
+          "bb": 16000,
+          "bba": 16000,
+          "orbit_cost": 40000
+        },
+        {
+          "level": 17,
+          "sb": 10000,
+          "bb": 20000,
+          "bba": 20000,
+          "orbit_cost": 50000
+        },
+        {
+          "level": 18,
+          "sb": 15000,
+          "bb": 30000,
+          "bba": 30000,
+          "orbit_cost": 75000
+        },
+        {
+          "level": 19,
+          "sb": 20000,
+          "bb": 40000,
+          "bba": 40000,
+          "orbit_cost": 100000
+        },
+        {
+          "level": 20,
+          "sb": 30000,
+          "bb": 60000,
+          "bba": 60000,
+          "orbit_cost": 150000
+        },
+        {
+          "level": 21,
+          "sb": 40000,
+          "bb": 80000,
+          "bba": 80000,
+          "orbit_cost": 200000
+        },
+        {
+          "level": 22,
+          "sb": 50000,
+          "bb": 100000,
+          "bba": 100000,
+          "orbit_cost": 250000
+        },
+        {
+          "level": 23,
+          "sb": 50000,
+          "bb": 125000,
+          "bba": 125000,
+          "orbit_cost": 300000
+        },
+        {
+          "level": 24,
+          "sb": 75000,
+          "bb": 150000,
+          "bba": 150000,
+          "orbit_cost": 375000
+        },
+        {
+          "level": 25,
+          "sb": 100000,
+          "bb": 200000,
+          "bba": 200000,
+          "orbit_cost": 500000
+        },
+        {
+          "level": 26,
+          "sb": 100000,
+          "bb": 250000,
+          "bba": 250000,
+          "orbit_cost": 600000
+        },
+        {
+          "level": 27,
+          "sb": 150000,
+          "bb": 300000,
+          "bba": 300000,
+          "orbit_cost": 750000
+        },
+        {
+          "level": 28,
+          "sb": 200000,
+          "bb": 400000,
+          "bba": 400000,
+          "orbit_cost": 1000000
+        }
+      ],
+      "s_points": 54.64,
+      "affordable_levels_count": 17,
+      "starting_stack_minutes": 510,
+      "denominator": 9.333333333333334,
+      "reference_orbit_costs": {
+        "6": 2500,
+        "10": 7500,
+        "14": 25000,
+        "18": 75000
+      },
+      "calculation_error": null,
+      "scrape_error": null,
+      "structure_file": "/Users/mlee/Desktop/Coding Workspace/mtt-tooling/mtt-structure-evaluator/structure-scrapes/kingslive/kc-churchills-event-11-series-saver.json"
+    }
+  ]
+}
