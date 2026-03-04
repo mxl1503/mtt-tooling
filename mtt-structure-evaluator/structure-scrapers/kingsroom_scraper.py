@@ -15,6 +15,7 @@ CONFIG = SiteConfig(
     listing_urls=("https://kingsroom.com.au/live/",),
     link_selectors=(
         "a.cw-title",
+        "a[href*='?id=']",
         "a[href*='kingsroom.com.au/live/']",
         "a[href*='clockw']",
     ),

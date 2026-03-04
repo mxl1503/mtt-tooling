@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -241,9 +242,19 @@ def _extract_level_length_minutes(levels: list[ParsedLevel]) -> tuple[int | None
     durations = {level.duration_min for level in levels if level.duration_min > 0}
     if not durations:
         return None, "level_length_minutes not found"
-    if len(durations) > 1:
-        return None, f"Multiple level durations found: {sorted(durations)}"
-    return next(iter(durations)), None
+    if len(durations) == 1:
+        return next(iter(durations)), None
+
+    day1_durations = [
+        level.duration_min for level in levels if level.day == 1 and level.duration_min > 0
+    ]
+    if day1_durations:
+        most_common = Counter(day1_durations).most_common(1)[0][0]
+        return most_common, None
+
+    all_durations = [level.duration_min for level in levels if level.duration_min > 0]
+    most_common = Counter(all_durations).most_common(1)[0][0]
+    return most_common, None
 
 
 def _build_calc_payload(result: CalculationResult | None) -> tuple[

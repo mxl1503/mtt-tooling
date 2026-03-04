@@ -24,6 +24,18 @@ DEFAULT_LEVEL_TABLE_SELECTORS = (
 )
 
 _NON_NUMERIC_PATTERN = re.compile(r"[^0-9-]")
+_FLIGHT_PATTERN = re.compile(
+    r"(?:\b(?:flight|day)\s*\d+\s*[A-Z]\b|\bflight\s*[A-Z]\b)",
+    re.IGNORECASE,
+)
+_EVENT_MERGE_PATTERN = re.compile(
+    r"(?:"
+    r"\b(?:flight|day)\s*\d+\s*[A-Z]\b"
+    r"|\bflight\s*[A-Z]\b"
+    r"|\s*-?\s*\bday\s*\d+\b"
+    r")",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -127,17 +139,25 @@ def _extract_levels(driver: Any, by: Any, config: SiteConfig) -> tuple[list[Leve
     if not rows:
         rows = table.find_elements(by.CSS_SELECTOR, "tr")
 
-    level_map: dict[int, LevelEntry] = {}
+    levels: list[LevelEntry] = []
     level_length_minutes: int | None = None
+    prev_raw_level = 0
+    day_offset = 0
 
     for row in rows:
         cols = row.find_elements(by.CSS_SELECTOR, "td")
         if len(cols) < 4:
             continue
 
-        level = _parse_int(cols[0].text)
-        if level is None or level < 1:
+        raw_level = _parse_int(cols[0].text)
+        if raw_level is None or raw_level < 1:
             continue
+
+        if raw_level <= prev_raw_level:
+            day_offset = prev_raw_level + day_offset
+
+        effective_level = raw_level + day_offset
+        prev_raw_level = raw_level
 
         sb = _parse_blind(cols[1].text)
         bb = _parse_blind(cols[2].text)
@@ -149,16 +169,26 @@ def _extract_levels(driver: Any, by: Any, config: SiteConfig) -> tuple[list[Leve
             if maybe_minutes is not None and maybe_minutes > 0:
                 level_length_minutes = maybe_minutes
 
-        level_map[level] = LevelEntry(
-            level=level,
-            sb=sb,
-            bb=bb,
-            bba=bba,
-            orbit_cost=orbit_cost,
+        levels.append(
+            LevelEntry(
+                level=effective_level,
+                sb=sb,
+                bb=bb,
+                bba=bba,
+                orbit_cost=orbit_cost,
+            )
         )
 
-    ordered_levels = [level_map[key] for key in sorted(level_map)]
-    return ordered_levels, level_length_minutes
+    seen: dict[int, int] = {}
+    deduped: list[LevelEntry] = []
+    for entry in levels:
+        if entry.level not in seen:
+            seen[entry.level] = len(deduped)
+            deduped.append(entry)
+        else:
+            deduped[seen[entry.level]] = entry
+
+    return deduped, level_length_minutes
 
 
 def _is_probable_tournament_url(config: SiteConfig, href: str) -> bool:
@@ -174,8 +204,13 @@ def _is_probable_tournament_url(config: SiteConfig, href: str) -> bool:
     if listing_hosts and parsed.netloc not in listing_hosts:
         return False
 
+    lower_href = href.lower()
     lower_path = parsed.path.lower()
-    return "/live/" in lower_path or "clock" in href.lower()
+    if "/live/" in lower_path or "clock" in lower_href:
+        return True
+    if parsed.query and "id=" in parsed.query:
+        return True
+    return False
 
 
 def _collect_tournament_links(
@@ -212,7 +247,14 @@ def _collect_tournament_links(
         if seen_by_url:
             break
 
-    return [(name, url) for url, name in seen_by_url.items()]
+    deduped: dict[str, tuple[str, str]] = {}
+    for url, name in seen_by_url.items():
+        canonical = _FLIGHT_PATTERN.sub("", name).strip()
+        canonical = re.sub(r"\s{2,}", " ", canonical)
+        if canonical not in deduped:
+            deduped[canonical] = (name, url)
+
+    return list(deduped.values())
 
 
 def _build_calc_payload(result: CalculationResult | None) -> tuple[
@@ -319,6 +361,115 @@ def _scrape_tournament_page(
     )
 
 
+def _event_base_name(name: str) -> str:
+    base = _EVENT_MERGE_PATTERN.sub("", name).strip()
+    base = re.sub(r"\s{2,}", " ", base)
+    base = base.rstrip(" -:")
+    return base
+
+
+def _merge_multi_day_tournaments(
+    tournaments: list[TournamentScrapeResult],
+) -> list[TournamentScrapeResult]:
+    groups: dict[str, list[TournamentScrapeResult]] = {}
+    group_order: list[str] = []
+    for t in tournaments:
+        base = _event_base_name(t.name)
+        if base not in groups:
+            groups[base] = []
+            group_order.append(base)
+        groups[base].append(t)
+
+    merged: list[TournamentScrapeResult] = []
+    for base in group_order:
+        group = groups[base]
+        if len(group) == 1:
+            merged.append(group[0])
+            continue
+
+        group.sort(key=lambda t: t.levels[0].sb if t.levels else float("inf"))
+        primary = group[0]
+
+        combined_levels: list[LevelEntry] = list(primary.levels)
+        for secondary in group[1:]:
+            if not secondary.levels:
+                continue
+            offset = combined_levels[-1].level if combined_levels else 0
+            for lv in secondary.levels:
+                combined_levels.append(
+                    LevelEntry(
+                        level=lv.level + offset,
+                        sb=lv.sb,
+                        bb=lv.bb,
+                        bba=lv.bba,
+                        orbit_cost=lv.orbit_cost,
+                    )
+                )
+
+        starting_stack = primary.starting_stack
+        for t in group:
+            if t.starting_stack is not None:
+                starting_stack = t.starting_stack
+                break
+
+        level_length = primary.level_length_minutes
+        buyin = primary.buyin
+
+        scrape_issues: list[str] = []
+        if starting_stack is None:
+            scrape_issues.append("starting_stack not found")
+        if level_length is None:
+            scrape_issues.append("level_length_minutes not found")
+        if not combined_levels:
+            scrape_issues.append("No level rows parsed")
+
+        calc_result: CalculationResult | None = None
+        if starting_stack is not None and level_length is not None and combined_levels:
+            orbit_costs = {lv.level: lv.orbit_cost for lv in combined_levels}
+            calc_result = calculate_s_points(
+                starting_stack=starting_stack,
+                level_length=level_length,
+                orbit_costs=orbit_costs,
+            )
+
+        (
+            s_points,
+            affordable_levels_count,
+            starting_stack_minutes,
+            denominator,
+            reference_orbit_costs,
+            calculation_error,
+        ) = _build_calc_payload(calc_result)
+
+        if calc_result is None:
+            calculation_error = (
+                "Cannot calculate S-Points without starting_stack, "
+                "level_length_minutes, and levels"
+            )
+
+        scrape_error = "; ".join(scrape_issues) if scrape_issues else None
+        merged.append(
+            TournamentScrapeResult(
+                source=primary.source,
+                name=base,
+                url=primary.url,
+                buyin=buyin,
+                starting_stack=starting_stack,
+                level_length_minutes=level_length,
+                levels=combined_levels,
+                s_points=s_points,
+                affordable_levels_count=affordable_levels_count,
+                starting_stack_minutes=starting_stack_minutes,
+                denominator=denominator,
+                reference_orbit_costs=reference_orbit_costs,
+                calculation_error=calculation_error,
+                scrape_error=scrape_error,
+            )
+        )
+
+    return merged
+
+
 def scrape_site(
     config: SiteConfig,
     *,
@@ -376,6 +527,8 @@ def scrape_site(
                 )
     finally:
         driver.quit()
+
+    tournaments = _merge_multi_day_tournaments(tournaments)
 
     with_s_points = sum(1 for item in tournaments if item.s_points is not None)
     payload: dict[str, Any] = {

@@ -18,6 +18,7 @@ CONFIG = SiteConfig(
     ),
     link_selectors=(
         "a.cw-title",
+        "a[href*='?id=']",
         "a[href*='kingslive.com.au/live/']",
         "a[href*='clockw']",
     ),
