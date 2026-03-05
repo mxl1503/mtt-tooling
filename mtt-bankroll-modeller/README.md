@@ -103,9 +103,11 @@ If any nonzero-probability outcome has `bankroll + profit <= 0`, ruin is possibl
 ## Run
 
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
+make install
+make run
 ```
+
+Requires [uv](https://docs.astral.sh/uv/).
 
 ## Project structure
 

@@ -71,10 +71,19 @@ Each level may provide either:
 From the `mtt-structure-evaluator/` directory:
 
 ```bash
-python -m mtt_structure_evaluator.cli --file examples/example_structure.json --starting-stack 15000 --level-length 30
+make install
+make run-example
+```
+
+Or with custom args:
+
+```bash
+make run ARGS="--file examples/example_structure.json --starting-stack 15000 --level-length 30"
 ```
 
 You can omit `--starting-stack` and `--level-length` if those values are present in the file.
+
+Requires [uv](https://docs.astral.sh/uv/).
 
 ## Scrapers (no manual CSV)
 
@@ -85,13 +94,13 @@ Manual CSV conversion is no longer needed. The scraper flow writes:
 ### Install scraping dependency
 
 ```bash
-pip install -e ".[scraping]"
+make install-scraping
 ```
 
 ### Run kingsroom scraper
 
 ```bash
-python structure-scrapers/kingsroom_scraper.py
+make scrape-kingsroom
 ```
 
 Default outputs:
@@ -101,7 +110,7 @@ Default outputs:
 ### Run kingslive scraper
 
 ```bash
-python structure-scrapers/kingslive_scraper.py
+make scrape-kingslive
 ```
 
 Default outputs:
@@ -111,7 +120,7 @@ Default outputs:
 ### Run Sydney Champs PDF scraper
 
 ```bash
-python structure-scrapers/sydney_champs_scraper.py
+make scrape-sydney
 ```
 
 Default outputs:
@@ -121,7 +130,7 @@ Default outputs:
 Optional OCR fallback support (for low-text pages):
 
 ```bash
-pip install pytesseract pdf2image pillow
+uv add pytesseract pdf2image pillow
 ```
 
 System tools may also be required:
@@ -131,7 +140,7 @@ System tools may also be required:
 ### Evaluate a scraped tournament file
 
 ```bash
-python -m mtt_structure_evaluator.cli --file structure-scrapes/<source>/<tournament-slug>.json
+make run ARGS="--file structure-scrapes/<source>/<tournament-slug>.json"
 ```
 
 Selenium scrapers support `--help`, `--output`, `--structures-dir`, `--timeout`, and `--limit`.

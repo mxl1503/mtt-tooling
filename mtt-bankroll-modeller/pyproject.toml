@@ -1,0 +1,11 @@
+[project]
+name = "mtt-bankroll-modeller"
+version = "0.1.0"
+description = "Streamlit app for EV and bankroll-growth modelling"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "streamlit",
+]

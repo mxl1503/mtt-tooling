@@ -15,8 +15,7 @@ mtt-tooling/
 
 ## Prerequisites
 
-- Python 3.11+ (recommended for both projects)
-- `pip`
+- [uv](https://docs.astral.sh/uv/) (Python 3.11+ is managed by uv)
 
 ## Quick Start
 
@@ -24,34 +23,29 @@ mtt-tooling/
 
 ```bash
 cd mtt-bankroll-modeller
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-streamlit run app.py
+make install
+make run
 ```
 
 ### 2) MTT Structure Evaluator (CLI)
 
 ```bash
 cd mtt-structure-evaluator
-python -m venv .venv
-source .venv/bin/activate
-pip install -e .
-python -m mtt_structure_evaluator.cli --file examples/example_structure.json --starting-stack 15000 --level-length 30
+make install
+make run-example
 ```
 
-If you want scraper support:
+Or with custom args:
 
 ```bash
-pip install -e ".[scraping]"
+make run ARGS="--file examples/example_structure.json --starting-stack 15000 --level-length 30"
 ```
 
-Run scraper scripts from `mtt-structure-evaluator/`:
+For scraper support:
 
 ```bash
-python structure-scrapers/kingsroom_scraper.py
-python structure-scrapers/kingslive_scraper.py
-python structure-scrapers/sydney_champs_scraper.py
+make install-scraping
+make scrape-kingsroom   # or scrape-kingslive, scrape-sydney
 ```
 
 Sydney Champs reads the bundled PDF at
